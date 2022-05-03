@@ -1,5 +1,5 @@
 // import mysql
-const mysql = require('mysql');
+const mysql = require('mysql2');
 // import inquirer
 const inquirer = require('inquirer');
 // import console.table
@@ -75,7 +75,7 @@ function promptUser() {
 function viewDeparments() {
     var query = 'SELECT * FROM department';
     connection.query(query, function(err, res) {
-        if (err) return error(err);
+        if (err) throw err;error(err);
         console.table('All departments:', res);
         options();
     })
@@ -83,7 +83,7 @@ function viewDeparments() {
 function viewEmployee() {
     var query = 'SELECT * FROM employee';
     connection.query(query, function(err, res) {
-        if (err) return error(err);
+        if (err) throw error(err);
         console.log(res.length + ' employees');
         console.table('All Employees:', res);
         options();
@@ -92,7 +92,7 @@ function viewEmployee() {
 function viewRoles() {
     var query = 'SELECT * FROM role';
     connection.query(query, function(err, res) {
-        if (err) return error(err);
+        if (err) throw error(err);
         console.table('All Roles:', res);
         options();
 
@@ -114,7 +114,7 @@ function addDepartment() {
             });
             var query = 'SELECT * FROM department';
             connection.query(query, function(err, res) {
-                if (err) return error(err);
+                if (err) throw error(err);
                 console.log('Department has been added');
                 console.table('All Department:', res);
                 options();
@@ -124,7 +124,7 @@ function addDepartment() {
 
 function addEmployee() {
     connection.query('SELECT * FROM role', function (err,res) {
-        if (err) return error(err);
+        if (err) throw error(err);
         inquirer
         .prompt ([
             {
