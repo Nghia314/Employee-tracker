@@ -16,7 +16,7 @@ This project is licensed under MIT
 - deployed page : https://nghia314.github.io/Employee-tracker/
 - github repo: https://github.com/Nghia314/Employee-tracker
 ## Demonstrate video
-- 
+- https://www.youtube.com/watch?v=M2EO5Upv7Ng
 ## Code snippet
 the following code is show how I create connection to mysql database
 ```
