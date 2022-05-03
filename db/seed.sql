@@ -12,13 +12,13 @@ VALUES
 ('Accountant', 20000, 2),
 ('financial manager', 300000, 2),
 ('accounting manager', 300000, 3),
-('software Engineer', 300000, 3),
+('software Engineer', 300000, 3);
 
 INSERT INTO employee (first_name, last_name, role_id, manager_id)
 VALUES
-('Devin','John', 1, null),
-('John','Miller', 1, 3),
-('Smith','John', 2, 3),
-('Ana','Gomez',5, 4),
+('Devin', 'John', 1, null),
+('John', 'Miller', 1, 3),
+('Smith', 'John', 2, 3),
+('Ana', 'Gomez',5, 4),
 ('Tyler', 'Smith', 4, null),
-('David','John', 6, null),
+('David', 'John', 6, null);
