@@ -75,7 +75,7 @@ function promptUser() {
 function viewDeparments() {
     var query = 'SELECT * FROM department';
     connection.query(query, function(err, res) {
-        if (err) throw err;error(err);
+        if (err) throw error(err);
         console.table('All departments:', res);
         options();
     })
@@ -147,7 +147,7 @@ function addEmployee() {
               type: 'list',
               choices: function () {
                   var roleString = [];
-                  for (var i = 0; i < roles.length; i++) {
+                  for (var i = 0; i < res.length; i++) {
                       roleString.push(res[i].title);
                   }
                   return roleString;
