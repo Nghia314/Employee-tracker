@@ -13,8 +13,8 @@
 ![Github licence](http://img.shields.io/badge/license-MIT-blue.svg)
 This project is licensed under MIT
 ## Github page
-- 
-- 
+- deployed page : https://nghia314.github.io/Employee-tracker/
+- github repo: https://github.com/Nghia314/Employee-tracker
 ## Demonstrate video
 - 
 ## Code snippet
